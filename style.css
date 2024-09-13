@@ -45,7 +45,7 @@ header{
     text-decoration: none;
 }
 .nav-bar ul li:hover a{
-background-color: #97a2a3;
+background-color: none;
 color: #e888d0;
 cursor: pointer;
 }
@@ -80,5 +80,70 @@ h4{
     background-color: #000000;
     color: #e888d0;
     border: 2px solid black;
+    cursor: pointer;
+}
+/* recipe css */
+.recipe{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #213032;
+}
+.recipe h2{
+    color: #edffef;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.box .card img {
+    width: 100%;  /* Make the image take up the full width of the card */
+    height: auto; /* Maintain the image's aspect ratio */
+    object-fit: cover;
+    
+}
+.box .card .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: #edffef;
+    color: #182f32;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.box .card:hover .content{
+    opacity: 1;
+}
+.card h3{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #213032;
+}
+.box .card p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.box .card button{
+    position: relative;
     cursor: pointer;
 }
