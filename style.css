@@ -145,5 +145,17 @@ h4{
 }
 .box .card button{
     position: relative;
+    background-color:#213032 ;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid black;
+font-weight: bold;   
+ transform: .4s;
+    padding: 13px 30px;
+}
+
+.box .card button:hover{
+    color:#e888d0;
+    border: 1px solid black;
     cursor: pointer;
 }
